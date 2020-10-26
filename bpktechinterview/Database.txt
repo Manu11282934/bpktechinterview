@@ -1,0 +1,17 @@
+We have a table name as customers with following columns 
+
+id,Firstname,lastname,city,phone number
+
+Write a SQL query for the above exercise, where it will show me how many people are from Bangalore, Mysore, Hyderabad, Vijayawada.
+
+Count of people from these cities
+
+And then show only those cities which have more than 300 people in the contact list.
+
+
+Solution:
+
+SELECT count(id),city FROM Customers
+group by city
+having count(id)>300
+        
